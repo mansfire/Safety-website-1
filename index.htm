@@ -11,8 +11,8 @@
 <a href="https://drive.google.com/drive/folders/1Xuz-Bs6PgDJaxi61MyNSXgmK91vRqrHh">Safety Data Sheets</a>
 <h1>Safety incidents</h1>
 <label for="incident">Choose an incident:</label>
-<select id="incident" name="incident">
-  <option value="i1">Incident 1 (10/11/2023)</option>
+<select id="Incident Type" name="Incident Type">
+  <option value="Fire">Incident 1 (10/11/2023)</option>
   <option value="i2">Incident 2 (11/1/2023)</option>
   <option value="i3">Incident 3 (11/4/2023)</option>
   <option value="i4">Incident 4 (11/20/2023)</option>
@@ -29,15 +29,25 @@
      <input type="number" id="Number of spill incidents" name="Number of spill incidents" value="0"><br>
      <label for="Number of cut incidents"">Number of cut incidents:</label><br>
      <input type="number" id="Number of cut incidents" name="Number of cut incidents" value="0"><br>
-     <select id="incident" name="incident">
-      <option value="i1">Incident 1 (10/11/2023)</option>
-      <option value="i2">Incident 2 (11/1/2023)</option>
-      <option value="i3">Incident 3 (11/4/2023)</option>
-      <option value="i4">Incident 4 (11/20/2023)</option>
+     <input type="submit" value="Send">
+     <input type="reset" value="Reset">
+</form>
+                                      
+<h1> Report Incident </h1>
+<form action="https://formsubmit.co/ryan.e.mansfield@gmail.com" method="POST">
+     <label for="People">Who was involved:</label>
+     <input type="text" name="People" placeholder="name of people involved" required><br>
+     <label for="Type">Type of incident:</label>   
+    <select id="Type" name="Type">
+      <option value="fire">fire</option>
+      <option value="spill">spill</option>
+      <option value="trip">trip</option>
+      <option value="cut">cut</option>
     </select><br>
      <input type="submit" value="Send">
      <input type="reset" value="Reset">
 </form>
+ 
 <h1> New Chemical </h1>
 <form action="https://formsubmit.co/ryan.e.mansfield@gmail.com" method="POST">
      <input type="text" name="name" placeholder="name" required>
