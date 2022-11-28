@@ -41,9 +41,12 @@
      <input type="reset" value="Reset">
 </form>
 <h1> Send notification </h1>
-                                     
+<p>Enter some text</p>
+<input id="userInput" type="text" placeholder="Text">
+<button onclick="returnText()">Submit</button>
+<br>                                    
 <form action="https://formsubmit.co/ryan.e.mansfield@gmail.com" method="POST">
-    <input type="text" id="Alert" name="Alert" value="[Insert allert]" readonly>
+    <input type="text" id="Alert" name="Alert" value="Alert! Fire detected in [room] please evacuate" readonly>
     <input type="submit" value="Send">
 </form>
 <address>
