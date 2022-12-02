@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Confluent Medical Safety Test Site</title>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+</head>
+<body>
+<img src="confluent.JPG" alt="Confluent Medical Logo">
+<h1 color:rgb(0, 0, 255)"> <font size="+200"> <b> Safety Notices Test </b></font></h1>
+<h1>Safety Data Sheet</h1>
+<a href="https://drive.google.com/drive/folders/1Xuz-Bs6PgDJaxi61MyNSXgmK91vRqrHh">Safety Data Sheets</a>
+
+<h1>Safety incident</h1>
+
+<p> Everytime there is an incident, use the below form to create a report on the incident  Fill in the
+    name of any people involved or injured. Select the type of incidnet from the drop down men. Select the level of seriousness
+    of the incident form the drop down menu. Enter the description. State rather or not its resolved. Send the report to HR </p> v
+                                      
+<form action="https://formsubmit.co/ryan.e.mansfield@gmail.com" method="POST">
+     <label for="People">Who was involved:</label>
+     <input type="text" name="People" placeholder="name of people involved" required><br>
+     <label for="Type">Type of incident:</label>   
+    <select id="Type" name="Type">
+      <option value="fire">fire</option>
+      <option value="spill">spill</option>
+      <option value="trip">trip</option>
+      <option value="cut">cut</option>
+    </select><br>
+   <label for="Seriousness">Seriousness of incident:</label>   
+   <select id="Seriousness" name="Seriousness">
+      <option value="not">not</option>
+      <option value="mildly">mildly</option>
+      <option value="very">very</option>
+      <option value="extremely">extremely</option>
+    </select><br>
+    <label for="Description">Description of incident:</label>
+    <input type="text" name="Description" placeholder="Description of incident" required><br>
+    <label for="Resolved">Is the incident resolved:</label>
+    <input type="text" name="Resolved" placeholder="Resolved" required><br>                                                     
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+</form>
+ 
+
+<address>
+Written by <a href="mailto:ryan.mansfield@confluentmedical.com">Ryan Mansfield</a>.<br> 
+</address>
+
+</body>
+</html>
